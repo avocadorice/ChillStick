@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ChillStick Pairing</title>
+    <style>
+        body {
+            background-color: #141414;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #E50914;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.25rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+        .qr-container {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1.5rem;
+        }
+        img {
+            display: block;
+        }
+        .url-text {
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: #E50914;
+            background-color: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+    <script src="qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CHILLSTICK</h1>
+        <p>Scan this QR code with the ChillStick iOS app to pair your phone.</p>
+        
+        <div class="qr-container">
+            <div id="qr-code"></div>
+        </div>
+        
+        <div>
+            <span class="url-text" id="url-display">ws://...</span>
+        </div>
+    </div>
+
+    <script>
+        // Get device IP parameter from the WebView intent URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const ip = urlParams.get('ip') || '127.0.0.1';
+        const wsUrl = `ws://${ip}:8081`;
+        
+        document.getElementById('url-display').textContent = wsUrl;
+        
+        // Generate QR code pointing to the local WebSocket server URL offline
+        new QRCode(document.getElementById("qr-code"), {
+            text: wsUrl,
+            width: 250,
+            height: 250,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>

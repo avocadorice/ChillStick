@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Android TV Gradle / Build files
+.gradle/
+build/
+app/build/
+local.properties
+tv/local.properties
+tv/.gradle/
+tv/build/
+tv/app/build/
+
+# iOS Xcode files
+DerivedData/
+ChillStick/DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcworkspace/
+*.xcuserdatad/
+.orange/
+
+# General build artifacts
+*.apk

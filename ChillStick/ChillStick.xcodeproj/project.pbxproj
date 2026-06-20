@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B18698F22FE642990077D9AC /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698F12FE642990077D9AC /* WebSocketManager.swift */; };
+		B18698F42FE642990077D9AC /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698F32FE642990077D9AC /* QRScannerView.swift */; };
+		B18698F62FE642990077D9AC /* GamepadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698F52FE642990077D9AC /* GamepadView.swift */; };
+		B18698A32FE642990077D9AC /* ChillStickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698A22FE642990077D9AC /* ChillStickApp.swift */; };
+		B18698A52FE642990077D9AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698A42FE642990077D9AC /* ContentView.swift */; };
+		B18698A72FE6429B0077D9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18698A62FE6429B0077D9AC /* Assets.xcassets */; };
+		B18698AA2FE6429B0077D9AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18698A92FE6429B0077D9AC /* Preview Assets.xcassets */; };
+		B18698B42FE6429B0077D9AC /* ChillStickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698B32FE6429B0077D9AC /* ChillStickTests.swift */; };
+		B18698BE2FE6429B0077D9AC /* ChillStickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698BD2FE6429B0077D9AC /* ChillStickUITests.swift */; };
+		B18698C02FE6429B0077D9AC /* ChillStickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18698BF2FE6429B0077D9AC /* ChillStickUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B18698B02FE6429B0077D9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18698972FE642990077D9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B186989E2FE642990077D9AC;
+			remoteInfo = ChillStick;
+		};
+		B18698BA2FE6429B0077D9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18698972FE642990077D9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B186989E2FE642990077D9AC;
+			remoteInfo = ChillStick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B18698F12FE642990077D9AC /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		B18698F32FE642990077D9AC /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		B18698F52FE642990077D9AC /* GamepadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamepadView.swift; sourceTree = "<group>"; };
+		B186989F2FE642990077D9AC /* ChillStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18698A22FE642990077D9AC /* ChillStickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillStickApp.swift; sourceTree = "<group>"; };
+		B18698A42FE642990077D9AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B18698A62FE6429B0077D9AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B18698A92FE6429B0077D9AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B18698AF2FE6429B0077D9AC /* ChillStickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillStickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18698B32FE6429B0077D9AC /* ChillStickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillStickTests.swift; sourceTree = "<group>"; };
+		B18698B92FE6429B0077D9AC /* ChillStickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillStickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18698BD2FE6429B0077D9AC /* ChillStickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillStickUITests.swift; sourceTree = "<group>"; };
+		B18698BF2FE6429B0077D9AC /* ChillStickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillStickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B18698CC2FE650DA0077D9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B186989C2FE642990077D9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698AC2FE6429B0077D9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698B62FE6429B0077D9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B18698962FE642990077D9AC = {
+			isa = PBXGroup;
+			children = (
+				B18698A12FE642990077D9AC /* ChillStick */,
+				B18698B22FE6429B0077D9AC /* ChillStickTests */,
+				B18698BC2FE6429B0077D9AC /* ChillStickUITests */,
+				B18698A02FE642990077D9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B18698A02FE642990077D9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B186989F2FE642990077D9AC /* ChillStick.app */,
+				B18698AF2FE6429B0077D9AC /* ChillStickTests.xctest */,
+				B18698B92FE6429B0077D9AC /* ChillStickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18698A12FE642990077D9AC /* ChillStick */ = {
+			isa = PBXGroup;
+			children = (
+				B18698F12FE642990077D9AC /* WebSocketManager.swift */,
+				B18698F32FE642990077D9AC /* QRScannerView.swift */,
+				B18698F52FE642990077D9AC /* GamepadView.swift */,
+				B18698CC2FE650DA0077D9AC /* Info.plist */,
+				B18698A22FE642990077D9AC /* ChillStickApp.swift */,
+				B18698A42FE642990077D9AC /* ContentView.swift */,
+				B18698A62FE6429B0077D9AC /* Assets.xcassets */,
+				B18698A82FE6429B0077D9AC /* Preview Content */,
+			);
+			path = ChillStick;
+			sourceTree = "<group>";
+		};
+		B18698A82FE6429B0077D9AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B18698A92FE6429B0077D9AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B18698B22FE6429B0077D9AC /* ChillStickTests */ = {
+			isa = PBXGroup;
+			children = (
+				B18698B32FE6429B0077D9AC /* ChillStickTests.swift */,
+			);
+			path = ChillStickTests;
+			sourceTree = "<group>";
+		};
+		B18698BC2FE6429B0077D9AC /* ChillStickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B18698BD2FE6429B0077D9AC /* ChillStickUITests.swift */,
+				B18698BF2FE6429B0077D9AC /* ChillStickUITestsLaunchTests.swift */,
+			);
+			path = ChillStickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B186989E2FE642990077D9AC /* ChillStick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18698C32FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStick" */;
+			buildPhases = (
+				B186989B2FE642990077D9AC /* Sources */,
+				B186989C2FE642990077D9AC /* Frameworks */,
+				B186989D2FE642990077D9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChillStick;
+			productName = ChillStick;
+			productReference = B186989F2FE642990077D9AC /* ChillStick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B18698AE2FE6429B0077D9AC /* ChillStickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18698C62FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStickTests" */;
+			buildPhases = (
+				B18698AB2FE6429B0077D9AC /* Sources */,
+				B18698AC2FE6429B0077D9AC /* Frameworks */,
+				B18698AD2FE6429B0077D9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18698B12FE6429B0077D9AC /* PBXTargetDependency */,
+			);
+			name = ChillStickTests;
+			productName = ChillStickTests;
+			productReference = B18698AF2FE6429B0077D9AC /* ChillStickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B18698B82FE6429B0077D9AC /* ChillStickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18698C92FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStickUITests" */;
+			buildPhases = (
+				B18698B52FE6429B0077D9AC /* Sources */,
+				B18698B62FE6429B0077D9AC /* Frameworks */,
+				B18698B72FE6429B0077D9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18698BB2FE6429B0077D9AC /* PBXTargetDependency */,
+			);
+			name = ChillStickUITests;
+			productName = ChillStickUITests;
+			productReference = B18698B92FE6429B0077D9AC /* ChillStickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B18698972FE642990077D9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B186989E2FE642990077D9AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B18698AE2FE6429B0077D9AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B186989E2FE642990077D9AC;
+					};
+					B18698B82FE6429B0077D9AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B186989E2FE642990077D9AC;
+					};
+				};
+			};
+			buildConfigurationList = B186989A2FE642990077D9AC /* Build configuration list for PBXProject "ChillStick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B18698962FE642990077D9AC;
+			productRefGroup = B18698A02FE642990077D9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B186989E2FE642990077D9AC /* ChillStick */,
+				B18698AE2FE6429B0077D9AC /* ChillStickTests */,
+				B18698B82FE6429B0077D9AC /* ChillStickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B186989D2FE642990077D9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18698AA2FE6429B0077D9AC /* Preview Assets.xcassets in Resources */,
+				B18698A72FE6429B0077D9AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698AD2FE6429B0077D9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698B72FE6429B0077D9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B186989B2FE642990077D9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18698F22FE642990077D9AC /* WebSocketManager.swift in Sources */,
+				B18698F42FE642990077D9AC /* QRScannerView.swift in Sources */,
+				B18698F62FE642990077D9AC /* GamepadView.swift in Sources */,
+				B18698A52FE642990077D9AC /* ContentView.swift in Sources */,
+				B18698A32FE642990077D9AC /* ChillStickApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698AB2FE6429B0077D9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18698B42FE6429B0077D9AC /* ChillStickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18698B52FE6429B0077D9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18698C02FE6429B0077D9AC /* ChillStickUITestsLaunchTests.swift in Sources */,
+				B18698BE2FE6429B0077D9AC /* ChillStickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B18698B12FE6429B0077D9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B186989E2FE642990077D9AC /* ChillStick */;
+			targetProxy = B18698B02FE6429B0077D9AC /* PBXContainerItemProxy */;
+		};
+		B18698BB2FE6429B0077D9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B186989E2FE642990077D9AC /* ChillStick */;
+			targetProxy = B18698BA2FE6429B0077D9AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B18698C12FE6429B0077D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B18698C22FE6429B0077D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B18698C42FE6429B0077D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChillStick/Preview Content\"";
+				DEVELOPMENT_TEAM = 34UF37LP9H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChillStick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ChillStick needs camera access to scan the TV pairing QR code. ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B18698C52FE6429B0077D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChillStick/Preview Content\"";
+				DEVELOPMENT_TEAM = 34UF37LP9H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChillStick/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ChillStick needs camera access to scan the TV pairing QR code. ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B18698C72FE6429B0077D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChillStick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChillStick";
+			};
+			name = Debug;
+		};
+		B18698C82FE6429B0077D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChillStick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChillStick";
+			};
+			name = Release;
+		};
+		B18698CA2FE6429B0077D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChillStick;
+			};
+			name = Debug;
+		};
+		B18698CB2FE6429B0077D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocadorice.ChillStickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChillStick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B186989A2FE642990077D9AC /* Build configuration list for PBXProject "ChillStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18698C12FE6429B0077D9AC /* Debug */,
+				B18698C22FE6429B0077D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18698C32FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18698C42FE6429B0077D9AC /* Debug */,
+				B18698C52FE6429B0077D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18698C62FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18698C72FE6429B0077D9AC /* Debug */,
+				B18698C82FE6429B0077D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18698C92FE6429B0077D9AC /* Build configuration list for PBXNativeTarget "ChillStickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18698CA2FE6429B0077D9AC /* Debug */,
+				B18698CB2FE6429B0077D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B18698972FE642990077D9AC /* Project object */;
+}
