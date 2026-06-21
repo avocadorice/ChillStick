@@ -56,18 +56,18 @@ struct GamepadView: View {
                     
                     Spacer()
                     
-                    // Right Side: Brake and Thrust
+                    // Right Side: Chop and Jump
                     HStack(spacing: 20) {
-                        TouchButton(label: "BRAKE", color: Color.gray) {
-                            wsManager.sendKey(action: "keydown", key: "brake")
+                        TouchButton(label: "CHOP", color: Color.orange) {
+                            wsManager.sendKey(action: "keydown", key: "chop")
                         } onUp: {
-                            wsManager.sendKey(action: "keyup", key: "brake")
+                            wsManager.sendKey(action: "keyup", key: "chop")
                         }
-                        
-                        TouchButton(label: "THRUST", color: Color.green) {
-                            wsManager.sendKey(action: "keydown", key: "thrust")
+
+                        TouchButton(label: "JUMP", color: Color.green) {
+                            wsManager.sendKey(action: "keydown", key: "jump")
                         } onUp: {
-                            wsManager.sendKey(action: "keyup", key: "thrust")
+                            wsManager.sendKey(action: "keyup", key: "jump")
                         }
                     }
                     .padding(.trailing, 40)
