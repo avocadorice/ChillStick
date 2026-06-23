@@ -20,6 +20,19 @@ struct GamepadView: View {
                             .foregroundColor(.gray)
                     }
                     Spacer()
+                    // Exit the game on the TV (sends it to the background, like the
+                    // remote's Back button) — without disconnecting the controller.
+                    Button(action: {
+                        wsManager.sendKey(action: "keydown", key: "back")
+                    }) {
+                        Text("⤺ Exit Game")
+                            .font(.caption)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.white.opacity(0.12))
+                            .foregroundColor(.white)
+                            .cornerRadius(6)
+                    }
                     Button(action: {
                         wsManager.disconnect()
                     }) {
